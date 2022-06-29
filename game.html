@@ -1,62 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>X O</title>
-<style>
-h1 { font-family: monospace;}
+    <style>
+      h1 {
+        font-family: monospace;
+      }
 
-.container{width:500px; }
+      .container {
+        width: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: auto;
+      }
 
-.box{width: 150px; height: 150px; background-color: teal;
-margin: 1px; border-radius: 10px; transition: 0.5 all; border: 10px, solid, teal;
-animation-name: anim;
- animation-duration: 4s; box-shadow: 4px, 4px plum;}
+      .box {
+        width: 150px;
+        height: 150px;
+        background-color: teal;
+        margin: 1px;
+        border-radius: 10px;
+        transition: 0.5 all;
+        border: 10px, solid, teal;
+        animation-name: anim;
+        animation-duration: 4s;
+        box-shadow: 4px, 4px plum;
+      }
 
-div:hover{border-left: turquoise;
-}
+      div:hover {
+        border-left: turquoise;
+      }
 
+      @keyframes anim {
+        0% {
+          background-color: teal;
+        }
+        25% {
+          background-color: rgb(69, 139, 57);
+        }
+        50% {
+          background-color: rgb(61, 61, 104);
+        }
+        100% {
+          background-color: rgb(158, 215, 158);
+        }
+      }
 
- 
- @keyframes anim {  0%   {background-color: teal;}
-  25%  {background-color: rgb(69, 139, 57);}
-  50%  {background-color: rgb(61, 61, 104);}
-  100% {background-color: rgb(158, 215, 158);}
-}
- .container {display: flex; align-items: center; justify-content: center;flex-wrap: wrap;}
-/* justify is used for the x axis. align for the y axis */
+      /* justify is used for the x axis. align for the y axis */
+    </style>
+  </head>
 
-</style>
-
-
-
-</head>
-
-
-<body>
-
+  <body>
     <h1>Welcome to my little X O game!</h1>
 
-
-<div display: flex; flex-direction: column; 
-align-items: center; justify-content: center; height: 30px; >
-
-<div class="container"> 
-   </div>
-
-
-<div class="box"></div>
-<div class="box"></div>
-<div class="box"></div>
-<div class="box"></div>
-<div class="box"></div>
-<div class="box"></div>
-<div class="box"></div>
-<div class="box"></div>
-<div class="box"></div>
-
-</div>
-
-
-    
-</body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
 </html>
